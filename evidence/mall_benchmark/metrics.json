@@ -1,0 +1,21 @@
+{
+  "source": "https://staff.ie.cuhk.edu.hk/~ccloy/downloads_mall_dataset.html",
+  "download_url": "https://staff.ie.cuhk.edu.hk/~ccloy/files/datasets/mall_dataset.zip",
+  "archive_bytes": 91833998,
+  "archive_sha256": "21baea1066ea1473289c28c2f9fc8440cea3c8d8905b83a66529fbef184d47e3",
+  "original_frames": 2000,
+  "evaluated_frames": 100,
+  "sampling": "100 evenly spaced frame indices across all 2000 images, fixed before evaluation",
+  "labels": "Publisher manual head/count annotations in supplied ROI; not student manual queue labels",
+  "benchmark": "publisher-ROI crowd counting with pretrained HOG and NMS; ROI gates estimated head at box top + 0.1 height; no fitting",
+  "count_mae": 25.51,
+  "count_rmse": 26.148613729985765,
+  "p95_detection_ms": 37.63045899989947,
+  "mae_target_1_person_met": false,
+  "opencv": "4.14.0",
+  "numpy": "2.3.5",
+  "python": "3.12.14",
+  "cadence": "Publisher states <2 Hz; exact timing unavailable. Do not infer a 30-second forecast timeline.",
+  "limits": "Full-image mall people are not queue occupancy. No map homography, tracking, real-time rate, stop-response, or 30 independent demand episodes demonstrated.",
+  "terms": "Research only; noncommercial; cite original publications; separate from project MIT code license"
+}

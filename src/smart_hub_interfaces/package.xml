@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>smart_hub_interfaces</name><version>0.1.0</version>
+  <description>M1 subset of the shared Smart Mobility Hub interfaces.</description>
+  <maintainer email="student@example.com">M1 student</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+  <depend>std_msgs</depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

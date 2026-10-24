@@ -1,0 +1,19 @@
+test_crossing_immediate_and_clear_debounce (test_core.TestPerception.test_crossing_immediate_and_clear_debounce) ... ok
+test_disappearance_not_retained_indefinitely (test_core.TestPerception.test_disappearance_not_retained_indefinitely) ... ok
+test_future_out_of_order_and_invalid_values (test_core.TestPerception.test_future_out_of_order_and_invalid_values) ... ok
+test_gap_cannot_prove_crossing_clear (test_core.TestPerception.test_gap_cannot_prove_crossing_clear) ... ok
+test_low_confidence_is_unknown (test_core.TestPerception.test_low_confidence_is_unknown) ... ok
+test_polygon_boundary_and_outside (test_core.TestPerception.test_polygon_boundary_and_outside) ... ok
+test_repeated_stamp_does_not_refresh_watchdog (test_core.TestPerception.test_repeated_stamp_does_not_refresh_watchdog) ... ok
+test_s1_sequence_and_freeze (test_core.TestPerception.test_s1_sequence_and_freeze) ... ok
+test_short_occlusion_and_duplicate_ids (test_core.TestPerception.test_short_occlusion_and_duplicate_ids) ... ok
+test_zone_exit_is_debounced (test_core.TestPerception.test_zone_exit_is_debounced) ... ok
+test_features_are_causal_and_exact (test_core.TestPrediction.test_features_are_causal_and_exact) ... ok
+test_gap_resets_history (test_core.TestPrediction.test_gap_resets_history) ... ok
+test_no_short_history_or_bad_counts (test_core.TestPrediction.test_no_short_history_or_bad_counts) ... ok
+test_warmup_stale_and_rewarm (test_core.TestPrediction.test_warmup_stale_and_rewarm) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.007s
+
+OK

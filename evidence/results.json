@@ -1,0 +1,199 @@
+{
+  "dataset": "30 SYNTHETIC independent six-minute episodes; not real passenger measurements",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "numpy": "2.5.4",
+  "split": {
+    "train": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017
+    ],
+    "validation": [
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023
+    ],
+    "test": [
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029
+    ]
+  },
+  "validation_candidates": [
+    {
+      "alpha": 0.01,
+      "n": 1632,
+      "mae": 2.755689221474388,
+      "rmse": 3.508672439405977
+    },
+    {
+      "alpha": 0.1,
+      "n": 1632,
+      "mae": 2.755990657303938,
+      "rmse": 3.508788732262077
+    },
+    {
+      "alpha": 1.0,
+      "n": 1632,
+      "mae": 2.7584779323965125,
+      "rmse": 3.510184960494307
+    },
+    {
+      "alpha": 10.0,
+      "n": 1632,
+      "mae": 2.7692049941106847,
+      "rmse": 3.521873101252646
+    },
+    {
+      "alpha": 100.0,
+      "n": 1632,
+      "mae": 2.7908988094677705,
+      "rmse": 3.5488465371112126
+    },
+    {
+      "alpha": 1000.0,
+      "n": 1632,
+      "mae": 3.096772027356674,
+      "rmse": 3.909365681115368
+    }
+  ],
+  "validation_persistence": {
+    "n": 1632,
+    "mae": 3.2395833333333335,
+    "rmse": 4.235051565767043
+  },
+  "chosen_alpha": 0.01,
+  "selection_rule": "lowest validation MAE; choose persistence if better",
+  "model_id": "ridge_4f6e0d52b676",
+  "selected_policy": "ridge",
+  "test_ridge": {
+    "n": 1632,
+    "mae": 2.894360889290882,
+    "rmse": 3.7549722047111644
+  },
+  "test_persistence": {
+    "n": 1632,
+    "mae": 4.015318627450981,
+    "rmse": 5.294454646136843
+  },
+  "test_selected": {
+    "n": 1632,
+    "mae": 2.894360889290882,
+    "rmse": 3.7549722047111644
+  },
+  "per_test_episode": [
+    {
+      "seed": 1024,
+      "ridge": {
+        "n": 272,
+        "mae": 3.288490125524292,
+        "rmse": 4.068487702371064
+      },
+      "persistence": {
+        "n": 272,
+        "mae": 3.25,
+        "rmse": 3.9426029025326432
+      }
+    },
+    {
+      "seed": 1025,
+      "ridge": {
+        "n": 272,
+        "mae": 3.7276675796352388,
+        "rmse": 4.920902074536579
+      },
+      "persistence": {
+        "n": 272,
+        "mae": 6.4338235294117645,
+        "rmse": 7.6849738795529925
+      }
+    },
+    {
+      "seed": 1026,
+      "ridge": {
+        "n": 272,
+        "mae": 1.870127605785254,
+        "rmse": 2.2473277468769526
+      },
+      "persistence": {
+        "n": 272,
+        "mae": 2.3713235294117645,
+        "rmse": 2.632517247583295
+      }
+    },
+    {
+      "seed": 1027,
+      "ridge": {
+        "n": 272,
+        "mae": 1.7919697025964376,
+        "rmse": 2.327193666447814
+      },
+      "persistence": {
+        "n": 272,
+        "mae": 1.1176470588235294,
+        "rmse": 1.4245742398014511
+      }
+    },
+    {
+      "seed": 1028,
+      "ridge": {
+        "n": 272,
+        "mae": 3.2249329929041823,
+        "rmse": 3.988921604038327
+      },
+      "persistence": {
+        "n": 272,
+        "mae": 5.272058823529412,
+        "rmse": 6.381844653113282
+      }
+    },
+    {
+      "seed": 1029,
+      "ridge": {
+        "n": 272,
+        "mae": 3.4629773292998856,
+        "rmse": 4.177705136937744
+      },
+      "persistence": {
+        "n": 272,
+        "mae": 5.647058823529412,
+        "rmse": 6.62548555379373
+      }
+    }
+  ],
+  "inference_p95_ms": 0.003667,
+  "timing_n": 2000,
+  "timing_scope": "model call only, this machine; excludes ROS, tracking, feature extraction and transport",
+  "worse_ridge_example": {
+    "seed": 1024,
+    "second": 59,
+    "truth_30s": 6.0,
+    "persistence": 6.0,
+    "ridge": 7.379760265655737,
+    "selected": 7.379760265655737
+  },
+  "s1_freeze_time": 30.0,
+  "s1_first_invalid_after_freeze": 31.0
+}

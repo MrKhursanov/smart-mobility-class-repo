@@ -1,0 +1,5 @@
+{
+  "instructions": "Replace ALL image_points nulls with measured pixel coordinates of these floor-plane corners; never run unchanged.",
+  "image_points": [[null, null], [null, null], [null, null], [null, null]],
+  "map_points": [[2, 5], [6, 5], [6, 7], [2, 7]]
+}
